@@ -18,7 +18,7 @@
 <meta property="og:description" content="###主要参考：1、https://juejin.im/post/5b9bd34cf265da0aee3f0320这是我的头像，图片地址可以使用hexo-asset-image这个插件，将图片保存在本地，然后在macdown中引用图片,可以自己搜一下这个插件的用法 1、安装npm install https://github.com/7ym0n/hexo-asset-image –sa 2、直接新">
 <meta property="og:locale" content="zh">
 <meta property="og:image" content="http://yoursite.com/2019/07/29/我的hexo/1.jpeg">
-<meta property="og:updated_time" content="2019-07-29T15:43:26.338Z">
+<meta property="og:updated_time" content="2019-07-30T15:34:00.927Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的hexo">
 <meta name="twitter:description" content="###主要参考：1、https://juejin.im/post/5b9bd34cf265da0aee3f0320这是我的头像，图片地址可以使用hexo-asset-image这个插件，将图片保存在本地，然后在macdown中引用图片,可以自己搜一下这个插件的用法 1、安装npm install https://github.com/7ym0n/hexo-asset-image –sa 2、直接新">
@@ -204,7 +204,10 @@
     
     <p>###主要参考：1、<a><a href="https://juejin.im/post/5b9bd34cf265da0aee3f0320" target="_blank" rel="noopener">https://juejin.im/post/5b9bd34cf265da0aee3f0320</a></a><br>这是我的头像，图片地址可以使用hexo-asset-image这个插件，将图片保存在本地，然后在macdown中引用图片,可以自己搜一下这个插件的用法</p>
 <p>1、安装<br>npm install <a href="https://github.com/7ym0n/hexo-asset-image" target="_blank" rel="noopener">https://github.com/7ym0n/hexo-asset-image</a> –sa</p>
-<p>2、直接新建文章，在文章的同一路径下会生成一个同名文件夹，使用![1](1.jpeg)就可以展示图片了<br><br><br><img src="/2019/07/29/我的hexo/1.jpeg" alt="1"></p>
+<p>2、直接新建文章，在文章的同一路径下会生成一个同名文件夹，使用![1](1.jpeg)就可以展示图片了</p>
+<p>3、查看所有文章 在hexo的主目录下首先安装 npm i hexo-generator-json-content –save</p>
+<a id="more"></a>
+<p>再在_config.yml的配置文件中添加<br>jsonContent:<br>    meta: false<br>    pages: false<br>    posts:<br>      title: true<br>      date: true<br>      path: true<br>      text: false<br>      raw: false<br>      content: false<br>      slug: false<br>      updated: false<br>      comments: false<br>      link: false<br>      permalink: false<br>      excerpt: false<br>      categories: false<br>      tags: true<br><br><br><img src="/2019/07/29/我的hexo/1.jpeg" alt="1"></p>
 
     
 
@@ -341,6 +344,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
